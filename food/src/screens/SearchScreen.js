@@ -22,7 +22,7 @@ const SearchScreen = () => {
                 onTermSubmit={() => searchApi(term)}
             />
             {errorMessage ? <Text>{errorMessage}</Text> : null}
-            <Text>We have found {results.length} results.</Text>
+            <Text>We found {results.length} results.</Text>
             <ResultsList results={filterResultsByPrice('$')} title="Cost Effective"/>
             <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricier"/>
             <ResultsList results={filterResultsByPrice('$$$')}  title="Big Spender"/>
